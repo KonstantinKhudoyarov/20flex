@@ -42,11 +42,27 @@ input::-ms-clear {
   display: none;
 }
 
+img {
+  max-width: 100%;
+}
+
 .title {
-  font-size: 40px;
+  font-size: 49px;
   text-align: center;
-  line-height: 38px;
+  line-height: 50px;
   font-weight: 900;
+}
+
+.accent {
+  color: #1da5d2;
+}
+
+.logo__number {
+  color: #40c8f4;
+}
+
+.logo__name {
+  color: #1da5d2;
 }
 
 @import "common/a__intro";
@@ -74,7 +90,11 @@ input::-ms-clear {
 
   }
   .title {
-    font-size: 36px;
+    font-size: 44px;
+    line-height: 44px;
+  }
+  .block {
+    padding: 40px 0;
   }
 }
 
@@ -85,7 +105,7 @@ input::-ms-clear {
   }
 
   .block {
-    padding: 40px 0;
+    padding: 35px 0;
   }
 }
 
