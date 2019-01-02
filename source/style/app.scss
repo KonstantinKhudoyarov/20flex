@@ -57,6 +57,12 @@ img {
   color: #1da5d2;
 }
 
+.logo {
+  font-size: 49px;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
 .logo__number {
   color: #40c8f4;
 }
@@ -64,6 +70,11 @@ img {
 .logo__name {
   color: #1da5d2;
 }
+
+::-webkit-input-placeholder {color:#444;}
+::-moz-placeholder          {color:#444;}
+:-moz-placeholder           {color:#444;}
+:-ms-input-placeholder      {color:#444;}
 
 @import "common/a__intro";
 @import "common/b__pain";
