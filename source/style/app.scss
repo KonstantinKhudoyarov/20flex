@@ -37,7 +37,10 @@ ul {
   max-width: 1170px;
   margin: 0 auto;
 }
-
+iframe{
+  border: none;
+  border-radius: 10px;
+}
 input::-ms-clear {
   display: none;
 }
@@ -71,10 +74,16 @@ img {
   color: #1da5d2;
 }
 
+
+@import "common/slick.scss";
+@import "common/slick-theme.scss";
+@import "common/youtube.scss";
+
 ::-webkit-input-placeholder {color:#444;}
 ::-moz-placeholder          {color:#444;}
 :-moz-placeholder           {color:#444;}
 :-ms-input-placeholder      {color:#444;}
+
 
 @import "common/a__intro";
 @import "common/b__pain";
@@ -90,8 +99,7 @@ img {
 @import "common/l__delivery.scss";
 @import "common/m__footer.scss";
 @import "common/popup.scss";
-@import "common/slick.scss";
-@import "common/slick-theme.scss";
+
 
 @media screen and (max-width: 1199px){
   .container {
@@ -103,7 +111,7 @@ img {
     line-height: 44px;
   }
   .block {
-    padding: 40px 0;
+    padding: 60px 0;
   }
 }
 
@@ -117,7 +125,7 @@ img {
   }
 
   .block {
-    padding: 35px 0;
+    padding: 40px 0;
   }
 }
 
