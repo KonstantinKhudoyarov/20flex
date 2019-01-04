@@ -33,3 +33,12 @@ function youtubeShowVideo() {
 }
 youtubeShowVideo();
 //end youtubeShowVideo
+
+function revClose() {
+    let temper = $('.composition-content-box');
+    for (let i = 0; i < temper.length; i++) {        temper[i].classList.remove('content-plus');    }
+}
+revClose();
+$('.composition-component__cbtn').on('click', function () {
+    this.parentElement.parentElement.classList.toggle("content-plus");
+});
