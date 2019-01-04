@@ -36,7 +36,7 @@
     &-overflow {
         overflow: hidden;
         max-height: 93px;
-        transition: all .5s;
+        transition: all .8s;
     }
 
     &-component {
@@ -146,15 +146,16 @@
             border: 7px solid #f4fbfd;
             background-color: #d2e8ed;
             border-radius: 50%;
-
+            
             img {
                 position: absolute;
-                left: 50%;
-                top: 50%;
+                left: 0%;
+                top: 0%;
                 width: 174px;
                 height: 144px;
                 max-width: 174px;
                 transform: translate(-46%, -54%);
+                animation: rot 3s infinite linear;
             }
         }
     }
@@ -366,9 +367,21 @@
 
 .content-plus .composition-overflow {
     max-height: 800px;
-    transition: all .5s;
+    transition: all .8s;
 }
 
 .content-plus .composition-component__cbtn {
     transform: rotate(-180deg);
+}
+@keyframes rot {
+        from {
+                transform: rotate(0deg)
+                           translate(5px)
+                           rotate(0deg);
+        }
+        to {
+                transform: rotate(360deg)
+                           translate(5px)
+                           rotate(-360deg);
+        }
 }
