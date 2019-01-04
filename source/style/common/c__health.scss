@@ -1,0 +1,432 @@
+/*health*/
+.health {
+    padding: 85px 0 100px;
+    background: url('../img/health-bg.png') -390px 0 no-repeat;
+    background-size: cover;
+
+    .title {
+        margin-bottom: 36px;
+    }
+}
+
+.health__subtitle {
+    margin-bottom: 55px;
+    font-size: 22px;
+    line-height: 28px;
+    text-align: center;
+    color: #444;
+}
+
+.health__desc {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 33px;
+}
+
+.health__subtitle-accent {
+    font-weight: 700;
+    color: #151515;
+}
+
+.health__text {
+    font-size: 18px;
+    line-height: 28px;
+    color: #444;
+}
+
+.health__text_left {
+    width: 375px;
+}
+
+.health__text_right {
+    width: 312px;
+}
+
+.health__pic {
+    position: relative;
+    width: 312px;
+    margin-right: 76px;
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: 55px;
+        left: -160px;
+        display: block;
+        width: 124px;
+        height: 60px;
+        background: url('../img/health-left-arrow.png') 0 0 no-repeat;
+    }
+
+    &::after {
+        content: '';
+        position: absolute;
+        top: 55px;
+        right: -160px;
+        display: block;
+        width: 124px;
+        height: 60px;
+        background: url('../img/health-right-arrow.png') 0 0 no-repeat;
+    }
+}
+
+.health__text-accent {
+    font-weight: 500;
+    color: #151515;
+}
+
+.health__note {
+    position: relative;
+    margin-bottom: 65px;
+    padding: 23px 95px 23px 235px;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+.health__note-pic {
+    position: absolute;
+    top: -22px;
+    left: 48px;
+    width: 141px;
+}
+
+.health__note-text {
+    font-size: 19px;
+    line-height: 28px;
+    color: #151515;
+}
+
+.health__note-accent {
+    font-weight: 500;
+    font-style: italic;
+}
+
+.health__act-title {
+    margin-bottom: 98px;
+    font-size: 26px;
+    line-height: 28px;
+    font-weight: 700;
+    text-align: center;
+    color: #151515;
+}
+
+.health__list {
+    display: flex;
+}
+
+.health__item {
+    width: 369px;
+    position: relative;
+    background-color: #fff;
+    border-radius: 5px;
+    
+    &:not(:last-child) {
+        margin-right: 30px;
+    }
+}
+
+.health__item-pic {
+    position: absolute;
+    top: -76px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 96px;
+    height: 96px;
+    background-color: #fff;
+    border-radius: 50%;
+}
+
+.health__item-title {
+    padding: 29px 0 27px;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 18px;
+    text-align: center;
+    color: #fff;
+    background-color: #1da5d2;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.health__item-remark {
+    padding: 25px 0 20px;
+    border-bottom: 1px solid #f1f1f1;
+    font-size: 19px;
+    font-weight: 500;
+    line-height: 28px;
+    font-style: italic;
+    text-align: center;
+    color: #151515;
+}
+
+.health__item-desc {
+    padding: 15px 33px;
+    font-size: 18px;
+    line-height: 28px;
+    text-align: center;
+    color: #444;
+}
+
+/*media for health*/
+@media screen and (max-width: 1199px){
+
+    .health {
+
+        .title {
+            margin-bottom: 25px;
+        }
+    }
+
+    .health__subtitle {
+        margin-bottom: 30px;
+    }
+
+    .health__pic {
+        margin-right: 0;
+
+        &::before {
+            top: 18px;
+        }
+
+        &::after {
+            top: 18px;
+        }
+    }
+
+    .health__text {
+        font-size: 17px;
+    }
+
+    .health__text_left {
+        width: 330px;
+    }
+
+    .health__note {
+        margin-bottom: 30px;
+    }
+
+    .health__item {
+
+        &:not(:last-child) {
+            margin-right: 15px;
+        }
+    }
+
+    .health__item-remark {
+        font-size: 18px;
+    }
+
+    .health__item-desc {
+        padding: 15px;
+    }
+  }
+
+  @media (max-width: 1023px){
+    
+    .health {
+
+        .title {
+            margin-bottom: 10px;
+        }
+    }
+
+    .health__desc {
+        flex-direction: column;
+    }
+
+    .health__text {
+        line-height: 22px;
+    }
+
+    .health__text_left,
+    .health__text_right {
+        width: 100%;
+    }
+
+    .health__pic {
+
+        &::before {
+            top: 55px;
+        }
+
+        &::after {
+            top: 55px;
+        }
+    }
+
+    .health__note {
+        padding: 10px 10px 10px 150px;
+    }
+
+    .health__note-pic {
+        left: 20px;
+        width: 106px;
+    }
+
+    .health__note-text {
+        font-size: 17px;
+        line-height: 22px;
+    }
+
+    .health__item {
+        height: 200px;
+        transition: 1s;
+
+        &.health__item_active {
+            height: auto;
+
+            .health__item-desc {
+
+                .health__item-btn {
+
+                    &::before {
+                        content: '-';
+                    }
+                }
+
+                p {
+                    opacity: 1;
+                }
+            }
+        }
+    }
+
+    .health__item-title {
+        padding: 29px 0 15px;
+        min-height: 79px;
+        font-size: 23px;
+    }
+
+    .health__item-remark {
+        position: relative;
+        font-size: 16px;
+        line-height: 20px;
+        padding: 10px 0;
+        min-height: 79px;
+    }
+
+    .health__item-desc {
+        position: relative;
+        padding: 35px 10px 10px;
+        font-size: 16px;
+        line-height: 20px;
+
+        p {
+            opacity: 0;
+        }
+    }
+
+    .health__item-btn {
+        position: absolute;
+        top: 5px;
+        left: 50%;
+        transform: translateX(-50%);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 30px;
+        height: 30px;
+        background-color: #a4c12f;
+        border-radius: 50%;
+        font-size: 20px;
+        font-weight: 700;
+        font-style: normal;
+        color: #fff;
+        cursor: pointer;
+
+        &::before {
+            content: '+';
+        }
+    }
+  }
+
+  @media (max-width: 767px) {
+    
+    .health__subtitle {
+        margin-bottom: 15px;
+        font-size: 18px;
+        line-height: 20px;
+    }
+
+    .health__text {
+        font-size: 16px;
+    }
+
+    .health__pic {
+        margin: 10px 0;
+
+        &::before {
+            display: none;
+        }
+
+        &::after {
+            display: none;
+        }
+    }
+
+    .health__note {
+        padding: 10px;
+        margin-bottom: 20px;
+    }
+
+    .health__note-pic {
+        display: none;
+    }
+
+    .health__desc {
+        margin-bottom: 20px;
+    }
+
+    .health__note-text {
+        font-size: 16px;
+    }
+
+    .health__act-title {
+        margin-bottom: 15px;
+        font-size: 22px;
+        line-height: 25px;
+    }
+
+    .health__list {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .health__item {
+        height: 190px;
+
+        &:not(:last-child) {
+            margin: 0 0 20px 0;
+        }
+    }
+
+    .health__item-pic {
+        display: none;
+    }
+
+    .health__item-remark {
+        min-height: 0;
+    }
+
+    .health__item-desc {
+        padding: 46px 10px 10px;
+    }
+
+    .health__item-btn {
+        top: 10px;
+    }
+  }
+
+  @media (max-width: 479px) {
+    
+    .health__pic {
+        width: 280px;
+    }
+
+  }
+
+  /*END health*/
