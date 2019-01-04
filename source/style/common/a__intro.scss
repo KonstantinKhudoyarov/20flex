@@ -335,10 +335,7 @@
     padding: 11px 0;
     border: none;
     outline: none;
-    background: rgb(156,193,39);
-    background: -moz-radial-gradient(center, ellipse cover, rgba(156,193,39,1) 0%, rgba(143,179,27,1) 100%);
-    background: -webkit-radial-gradient(center, ellipse cover, rgba(156,193,39,1) 0%,rgba(143,179,27,1) 100%);
-    background: radial-gradient(ellipse at center, rgba(156,193,39,1) 0%,rgba(143,179,27,1) 100%);
+    background-image: linear-gradient(to right, #87ac13 0%, #9cc127 51%, #87ac13 100%);
     font-size: 30px;
     line-height: 20px;
     font-weight: 700;
@@ -349,10 +346,7 @@
     transition: .2s;
 
     &:hover {
-        background: rgb(156,193,39);
-        background: -moz-radial-gradient(center, ellipse cover, rgba(156,193,39,1) 0%, rgba(119,149,25,1) 100%);
-        background: -webkit-radial-gradient(center, ellipse cover, rgba(156,193,39,1) 0%,rgba(119,149,25,1) 100%);
-        background: radial-gradient(ellipse at center, rgba(156,193,39,1) 0%,rgba(119,149,25,1) 100%);
+        background-image: linear-gradient(to right, #627c11 0%, #9cc127 51%, #627c11 100%);
     }
 }
 
