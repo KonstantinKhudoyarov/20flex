@@ -42,3 +42,12 @@ revClose();
 $('.composition-component__cbtn').on('click', function () {
     this.parentElement.parentElement.classList.toggle("content-plus");
 });
+
+var healthItem = document.querySelectorAll('.health__item'),
+healthItemBtn = document.querySelectorAll('.health__item-btn');
+
+for(var i=0;i<healthItemBtn.length;i++){
+    healthItemBtn[i].addEventListener('click', function(){
+           this.parentNode.parentNode.classList.toggle('health__item_active');
+        });
+}

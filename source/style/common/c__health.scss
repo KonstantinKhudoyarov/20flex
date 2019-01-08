@@ -71,6 +71,21 @@
     }
 }
 
+.health__wrap {
+    position: relative;
+}
+
+.health__pic-drpops {
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation-name: drops;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate;
+}
+
 .health__text-accent {
     font-weight: 500;
     color: #151515;
@@ -169,6 +184,15 @@
     line-height: 28px;
     text-align: center;
     color: #444;
+}
+
+@keyframes drops {
+    from {
+        transform: translateY(-10px);
+    }
+    to {
+        transform: translateY(0);
+    }
 }
 
 /*media for health*/
