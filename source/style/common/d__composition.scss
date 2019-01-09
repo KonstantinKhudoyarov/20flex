@@ -36,7 +36,8 @@
     &-overflow {
         overflow: hidden;
         max-height: 93px;
-        transition: all .8s;
+				transition: all .8s;
+				width: 100%;
     }
 
     &-component {
@@ -106,7 +107,7 @@
             line-height: 24px;
             text-align: center;
             margin-top: 5px;
-
+						width: 100%;
         }
 
         &__cbtn {
