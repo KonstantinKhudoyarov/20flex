@@ -1,0 +1,394 @@
+/*age*/
+.age {
+    padding: 90px 0 100px;;
+}
+
+.age__subtitle {
+    margin: 22px 0 52px;
+    font-size: 22px;
+    line-height: 28px;
+    color: #444;
+    text-align: center;
+}
+
+.age__list {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 80px;
+}
+
+.age__item {
+    position: relative;
+    width: 370px;
+}
+
+.age__item_30 {
+
+    .age__item-title {
+        background-color: #a4c12f;
+    }
+
+    .age__desc-bullet {
+        background-color: #a4c12f;
+    }
+}
+
+.age__item_50 {
+
+    .age__item-title {
+        background-color: #40c8f4;
+    }
+
+    .age__desc-bullet {
+        background-color: #40c8f4;
+    }
+}
+
+.age__item_50-plus {
+
+    .age__item-title {
+        background-color: #1da5d2;
+    }
+
+    .age__desc-bullet {
+        background-color: #1da5d2;
+    }
+}
+
+.age__item-top {
+    position: relative;
+    border-radius: 5px;
+    overflow: hidden;
+    box-sizing: content-box;
+}
+
+.age__img {
+    display: block;
+}
+
+.age__item-title {
+    padding: 25px 0 27px;
+    text-align: center;
+    font-size: 24px;
+    line-height: 18px;
+    font-weight: 700;
+    color: #fff;
+}
+
+.age__desc {
+    min-height: 375px;
+    padding: 35px 49px 6px 50px;
+    margin-top: -2px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-right: 1px solid #e6f7ff;
+    border-bottom: 1px solid #e6f7ff;
+    border-left: 1px solid #e6f7ff;
+    overflow: hidden;
+    box-shadow: 0 5px 18px 0 #e3eef3;
+}
+
+.age__desc__item {
+    position: relative;
+    padding: 0 0 0 40px;
+    
+    &:not(:last-child) {
+        margin-bottom: 28px;
+    }
+}
+
+.age__desc-bullet {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 29px;
+    height: 29px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &::before {
+        content: '';
+        display: block;
+        width: 14px;
+        height: 7px;
+        margin-top: -5px;
+        border-bottom: 3px solid #fff;
+        border-left: 3px solid #fff;
+        transform: rotate(-45deg);
+    }
+}
+
+.age__desc-text {
+    font-size: 18px;
+    line-height: 28px;
+    color: #444;
+}
+
+.form_age {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 23px 25px 23px 120px;
+    border: 1px solid #e6f7ff;
+    box-shadow: 0 5px 18px 0 #e3eef3;
+    border-radius: 8px;
+
+    .pack {
+        top: -16px;
+        left: 40px;
+        width: 63px;
+    }
+
+    .pack__tablets {
+        bottom: -13px;
+        left: -28px;
+    }
+
+    .form__price {
+        width: 242px;
+        margin-bottom: 0;
+    }
+
+    .form__price-old,
+    .form__price-new {
+        padding: 10px 0;
+    }
+
+    .form__price-old {
+        width: 40%;
+        margin-right: 10px;
+    }
+
+    .form__price-new {
+        width: 60%;
+    }
+
+    .form__currency {
+        line-height: 10px;
+    }
+
+    .form__main {
+        display: flex;
+        justify-content: space-around;
+        margin-bottom: 0;
+        padding: 7px 0 0;
+        width: 742px;
+    }
+
+    .form__main-name {
+        margin-bottom: 0;
+        width: 240px;
+
+        &::before {
+            background: url(../img/form-name_age.svg) 0 0 no-repeat;
+        }
+    }
+
+    .form__main-tel {
+        width: 240px;
+
+        &::before {
+            background: url(../img/form-tel_age.svg) 0 0 no-repeat;
+        }
+    }
+
+    .form__btn {
+        width: 222px;
+        margin-top: 0;
+    }
+
+    &::after {
+        display: none;
+    }
+}
+
+/*media for age*/
+@media screen and (max-width: 1199px){
+    .age__subtitle{
+        margin: 17px 0 35px;
+    }
+    .age__list {
+        margin-bottom: 65px;
+    }
+    .age__item {
+        width: 300px;
+    }
+    .age__item-title {
+        font-size: 22px;
+    }
+    .age__desc__item {
+        &:not(:last-child) {
+            margin-bottom: 20px;
+        }
+    }
+    .age__desc-text {
+        font-size: 16px;
+        line-height: 24px;
+    }
+    .age__desc {
+        min-height: 300px;
+        padding: 20px 20px 6px 20px;
+    }
+
+    .form_age {
+        padding: 23px 25px 23px 105px;
+
+        .pack {
+            left: 30px;
+        }
+        .form_age .form__price-old,
+        .form_age .form__price-new {
+            padding: 6px 0
+        }
+        .form__price-title {
+            font-size: 11px;
+        }
+        .form__prices_new {
+            font-size: 29px;
+            line-height: 30px;
+        }
+        .x_price_current {
+            font-size: 32px;
+            line-height: 33px;
+        }
+        .form__main-name {
+            width: 210px;
+        }
+        .form__main-tel {
+            width: 210px;
+        }
+        .form__btn {
+            width: 200px;
+        }
+        .btn {
+            font-size: 28px;
+            line-height: 18px;
+        }
+    }
+  }
+
+  @media (max-width: 1023px){
+    .age__subtitle {
+        margin: 10px 0 20px;
+        font-size: 20px;
+    }
+    .age__list {
+        margin-bottom: 30px;
+    }
+    .age__item {
+        width: 235px;
+    }
+    .age__item-title {
+        padding: 15px 0 17px;
+        font-size: 20px;
+    }
+    .age__desc {
+        min-height: 260px;
+        padding: 10px 10px 6px 10px;
+    }
+    .age__desc-bullet {
+        width: 20px;
+        height: 20px;
+
+        &::before {
+            margin-top: -3px;
+            width: 8px;
+            height: 4px;
+            border-bottom: 2px solid #fff;
+            border-left: 2px solid #fff;
+        }
+    }
+    .age__desc-text {
+        line-height: 20px;
+    }
+    .age__desc__item:not(:last-child) {
+        margin-bottom: 7px;
+    }
+    .age__desc__item {
+        padding: 0 0 0 30px;
+    }
+    .age__form {
+        display: flex;
+        justify-content: flex-end;
+    }
+    .form_age {
+        padding: 20px 0;
+        flex-direction: column;
+        width: 270px;
+        margin-right: 115px;
+
+        .pack {
+            position: absolute;
+            left: -230px;
+            top: 25px;
+            width: 180px;
+            margin-right: 0;
+        }
+
+        .form__price {
+            width: 100%;
+            margin-bottom: 15px;
+        }
+
+        .form__main {
+            width: 100%;
+            flex-direction: column;
+            padding: 0 20px;
+        }
+        .form__price-old,
+        .form__price-new {
+            width: 50%;
+        }
+        .form__main-name,
+        .form__main-tel,
+        .form__btn {
+            width: 100%;
+        }
+        .form__main-name,
+        .form__main-tel {
+            margin-bottom: 10px;
+        }
+    }
+  }
+
+  @media (max-width: 767px) {
+    .age__subtitle {
+        margin: 5px 0 15px;
+        font-size: 18px;
+    }
+    .age__list {
+        flex-direction: column;
+        align-items: center;
+    }
+    .age__item {
+        width: 370px;
+
+        &:not(:last-child) {
+            margin-bottom: 15px;
+        }
+    }
+    .age__desc {
+        min-height: auto;
+        padding: 10px 10px 10px 10px;
+    }
+    .age__form {
+        justify-content: center;
+    }
+    .form_age {
+        margin-right: 0;
+
+        .pack {
+            display: none;
+        }
+    }
+  }
+
+  @media (max-width: 479px) {
+    .age__item {
+        width: 300px;
+    }
+  }
