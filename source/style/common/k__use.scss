@@ -1,0 +1,126 @@
+/*use*/
+.use {
+    padding: 90px 0 100px;
+    background: url(../img/use-bg.png) -340px 0 no-repeat;
+    background-size: cover;
+}
+
+.use__ist {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    margin: 60px 0 76px;
+    counter-reset: use;
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        z-index: -1;
+        transform: translateX(-56%);
+        display: block;
+        width: 840px;
+        height: 3px;
+        background: url(../img/use-line.png) 0 0 no-repeat;
+    }
+}
+
+.use__item {
+    position: relative;
+
+    &::after {
+        counter-increment: use; 
+        content: counter(use);
+        position: absolute;
+        bottom: -23px;
+        left: 50%;
+        transform: translateX(-50%);
+        display: block;
+        width: 40px;
+        height: 40px;
+        background-color: #40c8f4;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 26px;
+        line-height: 28px;
+        font-weight: 500;
+        color: #fff;
+        box-shadow: 0 0 0 8px rgba(214, 236, 244, .7);;
+    }
+
+    &:not(:last-child) {
+        margin-right: 100px;
+    }
+}
+
+.use__pic {
+    max-width: 200px;
+    border-radius: 50%;
+}
+
+.use__img {
+    display: block;
+}
+
+.use__footnote {
+    text-align: center;
+    font-size: 22px;
+    line-height: 44px;
+    font-weight: 500;
+    color: #222;
+}
+
+/*media for use*/
+@media screen and (max-width: 1199px){
+    .use__ist {
+        margin: 50px 0 70px;
+    }
+  }
+
+  @media (max-width: 1023px){
+    .use__ist {
+        margin: 40px 0 55px;
+    }
+  }
+  
+
+@media (max-width: 767px) {
+    .use__ist  {
+        margin: 20px 0 30px;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .use__ist::before {
+        display: none;
+    }
+    .use__item:not(:last-child) {
+        margin-right: 0;
+    }
+    .use__item:last-child {
+        margin-top: 20px;
+    }
+    .use__footnote {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 419px) {
+    .use__ist {
+        margin: 15px 0 40px;
+    }
+    .use__item:last-child {
+        margin-top: 0;
+    }
+    .use__item:not(:last-child) {
+        margin-bottom: 40px;
+    }
+
+    .use__footnote {
+        font-size: 18px;
+        line-height: 20px;
+    }
+  }
