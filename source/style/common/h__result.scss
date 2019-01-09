@@ -44,3 +44,52 @@
 		color: #87a314;
 	}
 }
+
+
+@media screen and (max-width: 1199px){
+	.result {
+		.title {
+			padding: 0 40px;
+		}
+		&__subtitle {
+			font-size: 21px;
+			margin-top: 16px;
+		}
+		&__list {
+			margin-top: 30px;
+		}
+		&__item {
+			font-size: 17px;
+			line-height: 1.4;
+			padding: 20px 15px;
+			width: 235px;
+		}
+		&__num {
+			font-size: 64px;
+			margin-bottom: 8px;
+		}
+	}
+}
+
+@media (max-width: 1023px){ 
+	.result {
+		.title {
+			padding: 0;
+		}
+		&__subtitle {
+			font-size: 20px;
+			margin-top: 12px;
+		}
+		&__list {
+			margin-top: 24px;
+			flex-wrap: wrap;
+		}
+		&__item {
+			font-size: 17px;
+		}
+		&__num {
+			font-size: 60px;
+			margin-bottom: 0;
+		}
+	}
+}
