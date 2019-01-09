@@ -1,0 +1,46 @@
+.result {
+	color: #444444;
+	padding-top: 83px;
+	padding-bottom: 90px;
+	.title {
+		padding: 0 100px;
+	}
+	&__subtitle {
+		font-size: 22px;
+		text-align: center;
+		margin-top: 20px;
+	}
+	&__list {
+		margin-top: 50px;
+		display: flex;
+		justify-content: space-between;
+	}
+	&__item {
+		text-align: center;
+		width: 270px;
+		padding: 25px 20px;
+		font-size: 18px;
+		line-height: 1.56;
+		box-shadow: 0 5px 18px rgba(227, 238, 243, 0.75);
+		border: 1px solid #e6f7ff;
+	}
+	&__num {
+		font-size: 67px;
+		font-weight: 900;
+		line-height: 1;
+		display: block;
+		margin-bottom: 13px;
+	}
+	&__num-1 {
+		color: #fe7538;
+	}
+	&__num-2 {
+		color: #fea838;
+	}
+	&__num-3 {
+		color: #c1bf2f;
+	}
+	&__num-4 {
+		color: #87a314;
+	}
+}
