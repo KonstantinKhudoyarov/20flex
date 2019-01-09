@@ -1,0 +1,127 @@
+.doc {
+	padding-bottom: 0;
+	background-image: url(../img/health-bg.png);
+	padding-top: 85px;
+	position: relative;
+	color: #444;
+	background-position: 50% 4%;
+	.title {
+		color: #000;
+	}
+	&__img {
+		position: absolute;
+		bottom: 0;
+		left: 50%;
+		transform: translateX(-623px);
+	}
+	&__subtitle {
+		font-size: 24px;
+		text-align: center;
+		margin-top: 10px;
+	}
+	&__content {
+		margin-top: 42px;
+		padding-left: 570px;
+		padding-bottom: 76px;
+	}
+	&__text {
+		height: 490px;
+		font-size: 18px;
+		line-height: 1.56;
+		// overflow: hidden; 
+	}
+	&__par:nth-of-type(n+2) {
+		margin-top: 28px;
+
+	}
+	&__footer {
+		position: relative;
+		padding-top: 22px;
+		margin-top: 4px;
+		font-size: 18px;
+		line-height: 1.56;
+		&::before {
+			content: '';
+			display: block;
+			position: absolute;
+			top: 0;
+			width: 99%;
+			height: 1px;
+			background-color: #c8d8e2;
+		}
+	}
+	
+	&__name {
+		font-size: 22px;
+		color: #151515;
+		line-height: 1.2;
+	}
+	&__desc {
+		margin-top: 2px;
+	}
+	&__desc-block {
+		display: block;
+	}
+	&__proved {
+		margin-top: 36px;
+	}
+	&__proved-text {
+		padding: 7px 90px;
+		background-color: #e0eea6;
+		border-radius: 63px;
+		text-align: center;
+		color: #151515;
+		font-size: 19px;
+		line-height: 1.1;
+		font-weight: 500;
+		position: relative;
+		z-index: 1;
+		&::after {
+			content: '';
+			display: block;
+			position: absolute;
+			width: 24px;
+			height: 24px;
+			background-color: inherit;
+			bottom: 0;
+			left: 50%;
+			transform: translateY(44%) translateX(3px) scaleY(0.9) rotate(45deg) ;
+			z-index: -1;
+		}
+	}
+
+
+	&__list {
+		margin-top: 40px;
+		display: flex;
+		justify-content: space-around;
+		padding: 0 90px;
+		margin-left: 25px;
+	}
+	&__flag {
+		border-radius: 50%;
+		border: 3px solid #fff;
+	}
+
+
+	// custom Scroll
+	.mCSB_scrollTools {
+		width: 9px;
+		height: 467px;
+	}
+	.mCSB_inside > .mCSB_container {
+		margin-right: 41px;
+	}
+	.mCSB_scrollTools .mCSB_draggerRail {
+		background-color: #cce0e7;
+		width: 3px;
+	}
+	.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+		background-color: #1da5d2;
+		width: 8px;
+		border-radius: 5px;
+	}
+	.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar:after {
+		    background: repeating-linear-gradient(0deg, #1da5d2 1px, #1da5d2 3px, #40c8f4 3px, #40c8f4 4px);
+	}
+}
