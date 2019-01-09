@@ -1,0 +1,95 @@
+.result {
+	color: #444444;
+	padding-top: 83px;
+	padding-bottom: 90px;
+	.title {
+		padding: 0 100px;
+	}
+	&__subtitle {
+		font-size: 22px;
+		text-align: center;
+		margin-top: 20px;
+	}
+	&__list {
+		margin-top: 50px;
+		display: flex;
+		justify-content: space-between;
+	}
+	&__item {
+		text-align: center;
+		width: 270px;
+		padding: 25px 20px;
+		font-size: 18px;
+		line-height: 1.56;
+		box-shadow: 0 5px 18px rgba(227, 238, 243, 0.75);
+		border: 1px solid #e6f7ff;
+	}
+	&__num {
+		font-size: 67px;
+		font-weight: 900;
+		line-height: 1;
+		display: block;
+		margin-bottom: 13px;
+	}
+	&__num-1 {
+		color: #fe7538;
+	}
+	&__num-2 {
+		color: #fea838;
+	}
+	&__num-3 {
+		color: #c1bf2f;
+	}
+	&__num-4 {
+		color: #87a314;
+	}
+}
+
+
+@media screen and (max-width: 1199px){
+	.result {
+		.title {
+			padding: 0 40px;
+		}
+		&__subtitle {
+			font-size: 21px;
+			margin-top: 16px;
+		}
+		&__list {
+			margin-top: 30px;
+		}
+		&__item {
+			font-size: 17px;
+			line-height: 1.4;
+			padding: 20px 15px;
+			width: 235px;
+		}
+		&__num {
+			font-size: 64px;
+			margin-bottom: 8px;
+		}
+	}
+}
+
+@media (max-width: 1023px){ 
+	.result {
+		.title {
+			padding: 0;
+		}
+		&__subtitle {
+			font-size: 20px;
+			margin-top: 12px;
+		}
+		&__list {
+			margin-top: 24px;
+			flex-wrap: wrap;
+		}
+		&__item {
+			font-size: 17px;
+		}
+		&__num {
+			font-size: 60px;
+			margin-bottom: 0;
+		}
+	}
+}

@@ -1956,7 +1956,14 @@ $(function(){
         $(this).parent().addClass('active');
         return false
     });
+
+    $('.doc__text').mCustomScrollbar({
+        axis: 'y'
+    });
+
 });
+
+
 
 //youtubeShowVideo
 function youtubeShowVideo() {
