@@ -439,6 +439,14 @@
       margin-bottom: 20px;
     }
 
+    &__slider {
+
+      .show-btn {
+        margin: 0 auto;
+      }
+
+    }
+
     .slick-next {
       right: -24px;
     }
@@ -474,6 +482,10 @@
     }
 
     .slide {
+      .slide-content {
+        max-height: 188px;
+        margin-bottom: 10px;
+      }
       &__text {
         .ttl {
           font-size: 18px;
@@ -530,11 +542,11 @@
 
       .slide {
         flex-direction: column;
-        padding-left: 20px;
+        //padding-left: 20px;
 
         .slide-content {
           padding-top: 0;
-          max-height: 130px;
+          max-height: 120px;
 
           &::before {
             background: linear-gradient(transparent 50px, white);
