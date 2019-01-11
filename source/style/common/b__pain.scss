@@ -443,6 +443,11 @@
 
             &-box {
 
+                &__head {
+                    br {
+                        display: none;
+                    }
+                }
 
                 &__img {
                     width: 120px;

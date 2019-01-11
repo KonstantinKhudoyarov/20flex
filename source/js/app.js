@@ -2110,4 +2110,11 @@ $('.answer__file').on('change', function () {
     alert('Ваш файл ' + filesName + ' загружен');
 });
 
+var play = document.querySelector('.play'),
+videoNote = document.querySelector('.pain-content-box__note');
 
+function deleteVideoMessage(){
+    videoNote.parentNode.removeChild(videoNote);
+}
+
+play.addEventListener('click', deleteVideoMessage);

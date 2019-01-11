@@ -47,6 +47,12 @@
     text-align: right;
 }
 
+@media screen and (max-width: 1300px) {
+    .footer {
+        padding: 130px 0 70px;
+    }
+}
+
 @media screen and (max-width: 1199px){
     .footer {
         padding: 70px 0 40px;
