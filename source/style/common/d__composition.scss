@@ -313,6 +313,7 @@
 
 
 @media (max-width: 479px) {
+	
      .composition {
         &-subtitle {
             font-size: 16px;
@@ -362,7 +363,13 @@
 
 
 
-    }
+		}
+		.compo-over{
+			max-height: 70px;
+		}
+		.compo-over2{
+			max-height: 95px;
+		}
 }
 
 
