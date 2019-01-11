@@ -1,6 +1,7 @@
 /*intro*/
 .intro {
-    padding: 40px 0 104px 0;
+    position: relative;
+    padding: 40px 0 0 0;
     background: url('../img/intro-background.png') 0 0 no-repeat;
     background-size: cover;
 }
@@ -51,25 +52,26 @@
     display: flex;
     justify-content: flex-end;
     position: relative;
-    padding-left: 400px;
+    padding: 0 0 104px 400px;
 }
 
 .intro__people {
     position: absolute;
-    top: 158px;
-    left: -537px;
+    bottom: 0;
+    left: -528px;
     width: 890px;
+    height: 692px;
 }
 
 .intro__people-woman {
     position: absolute;
-    top: -1px;
+    bottom: 0;
     left: 0;
 }
 
 .intro__people-man {
     position: absolute;
-    top: -185px;
+    bottom: 0;
     left: 380px;
 }
 
@@ -221,6 +223,14 @@
     text-align: center;
 }
 
+.form__price-value {
+    text-align: center;
+}
+
+.star {
+    vertical-align: top;
+}
+
 .form__prices_new {
     font-size: 37px;
     line-height: 37px;
@@ -273,7 +283,7 @@
 }
 
 .form__main {
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     padding: 0 22px; 
 }
 
@@ -356,6 +366,12 @@
     line-height: 17px;
 }
 
+.form__main-footnote {
+    margin-top: 10px;
+    font-size: 14px;
+    text-align: center;
+}
+
 .form__seurity-img {
     vertical-align: sub;
 }
@@ -389,6 +405,10 @@
 
 @media screen and (max-width: 1199px) {
 
+    .intro.block {
+        padding-bottom: 0;
+    }
+
     .header {
         margin-bottom: 30px;
     }
@@ -408,6 +428,10 @@
 
     .header__icon {
         margin-right: 10px;
+    }
+
+    .intro__main {
+        padding-bottom: 60px;
     }
 
     .intro__title {
@@ -431,12 +455,11 @@
 
     .intro__people {
         width: 390px;
-        top: 276px;
         left: -457px;
     }
 
     .pack {
-        top: 350px;
+        top: 360px;
         left: -595px;
         width: 155px;
     }
@@ -481,6 +504,7 @@
 
     .intro__main {
         padding-left: 0;
+        padding-bottom: 40px;
         flex-direction: column;
     }
 
@@ -547,8 +571,12 @@
 
 @media (max-width: 767px) {
 
+    .header__logo {
+        margin-bottom: 5px;
+    }
+
     .header__list {
-        justify-content: space-around;
+        display: none;
     }
 
     .header__desc {
@@ -563,6 +591,10 @@
 
     .header__item_efficiency {
         margin: 0;
+    }
+
+    .intro__main {
+        padding-bottom: 30px;
     }
 
     .intro__desc {
@@ -606,6 +638,10 @@
   }
 
   @media (max-width: 479px) {
+
+    .intro__main {
+        padding-bottom: 25px;
+    }
     
     .intro__title {
         font-size: 29px;

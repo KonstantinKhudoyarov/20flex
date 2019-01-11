@@ -85,12 +85,15 @@
     .use__ist {
         margin: 40px 0 55px;
     }
+    .use__footnote {
+        line-height: 22px;
+    }
   }
   
 
 @media (max-width: 767px) {
     .use__ist  {
-        margin: 20px 0 30px;
+        margin: 20px 0 40px;
         flex-wrap: wrap;
         justify-content: space-around;
     }
@@ -122,6 +125,15 @@
     .use__footnote {
         font-size: 18px;
         line-height: 20px;
+    }
+  }
+
+  @media (min-width: 2000px) {
+    .use {
+        background: url(../img/use-bg.png) 0 0 no-repeat;
+    }
+    .health {
+        background: url(../img/health-bg.png) 0 0 no-repeat;
     }
   }
   /*END use*/

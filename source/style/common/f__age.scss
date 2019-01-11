@@ -132,7 +132,7 @@
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    padding: 23px 25px 23px 120px;
+    padding: 23px 25px 13px 120px;
     border: 1px solid #e6f7ff;
     box-shadow: 0 5px 18px 0 #e3eef3;
     border-radius: 8px;
@@ -174,6 +174,7 @@
     .form__main {
         display: flex;
         justify-content: space-around;
+        align-items: flex-start;
         margin-bottom: 0;
         padding: 7px 0 0;
         width: 742px;
@@ -235,7 +236,7 @@
     }
 
     .form_age {
-        padding: 23px 25px 23px 105px;
+        padding: 23px 25px 13px 105px;
 
         .pack {
             left: 30px;
@@ -316,7 +317,7 @@
         justify-content: flex-end;
     }
     .form_age {
-        padding: 20px 0;
+        padding: 20px 0 10px;
         flex-direction: column;
         width: 270px;
         margin-right: 115px;
@@ -379,6 +380,7 @@
         justify-content: center;
     }
     .form_age {
+        width: 370px;
         margin-right: 0;
 
         .pack {
@@ -389,6 +391,9 @@
 
   @media (max-width: 479px) {
     .age__item {
+        width: 300px;
+    }
+    .form_age {
         width: 300px;
     }
   }

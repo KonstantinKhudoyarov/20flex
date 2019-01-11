@@ -150,19 +150,31 @@
     .delivery__list {
         margin-top: 20px;
         flex-wrap: wrap;
-        justify-content: center;
+        justify-content: space-around;
     }
     .delivery__item {
-        width: 300px;
+        width: 200px;
     }
     .delivery__item:not(:last-child) {
         margin-bottom: 20px;
     }
     .delivery__item-wrap {
         margin-bottom: 20px;
+        width: 200px;
+        height: 200px;
+
+        &::before {
+            width: 30px;
+            height: 30px;
+            font-size: 21px;
+        }
+    }
+    .delivery__pic {
+        width: 160px;
     }
     .delivery__item-title {
         margin-bottom: 2px;
+        font-size: 18px;
     }
   }
   /*END delivery*/
