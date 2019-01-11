@@ -113,10 +113,22 @@
 			width: 210px;
 			padding: 10px 5px;
 			font-size: 15px;
-
+			&:nth-last-of-type(-n+2) {
+				margin-bottom: 0;
+			}
 		}
 		&__num {
 			font-size: 52px;
+		}
+	}
+}
+
+@media (max-width: 463px) {
+	.result {
+		&__item {
+			&:nth-last-of-type(2) {
+				margin-bottom: 6px;
+			}
 		}
 	}
 }
