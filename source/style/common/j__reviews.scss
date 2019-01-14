@@ -151,7 +151,7 @@
           transition: all 0.4s;
 
           &-active {
-            max-height: 700px;
+            max-height: 700px !important;
 
             &::before {
               display: none;
